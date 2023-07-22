@@ -25,5 +25,11 @@
     "@types/react": "^18.2.14",
     "@types/react-dom": "^18.2.6",
     "typescript": "^5.1.6"
+  },
+  "//": "Temporarily override to use this experimental peer dep needed for partial hydration by gatsby.",
+  "overrides": {
+    "react-server-dom-webpack@0.0.0-experimental-c8b778b7f-20220825": {
+      "react": "^18.2.0"
+    }
   }
 }
