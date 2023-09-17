@@ -1,18 +1,30 @@
 import * as React from 'react'
 import type { HeadFC, PageProps } from "gatsby"
+import "./index.css";
 
 import Layout from '../components/layout'
 
-const IndexPage: React.FC<PageProps> = () => {
+
+
+export const App = () => {
   return (
-    <main>
-      <Layout pageTitle="Home Page">
-        <p>I'm making this by following the Gatsby Tutorial.</p>
-      </Layout>
-    </main>
+    <Layout/>
   )
 }
 
-export const Head: HeadFC = () => <title>Home Page</title>
+export const Head: HeadFC = () => {
+  return (
+    <>
+    <title>Home Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Poiret+One&family=Syncopate&display=swap" rel="stylesheet" />
+    <link 
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Syncopate&display=swap" />
 
-export default IndexPage
+    </>
+    
+  )
+}
+  
+
+export default App
