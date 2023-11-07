@@ -5,7 +5,8 @@ import {
   ScheduleTitle,
   ScheduleDetails,
   ScheduleDivider,
-  ScheduleItemContainer
+  ScheduleItemContainer,
+  ScheduleContainer
 } from './schedule_styled'
 
 interface ScheduleItemProps {
@@ -30,7 +31,7 @@ const ScheduleItem = (props: ScheduleItemProps) => {
 
 const Schedule = () => {
   return (
-    <div>
+    <ScheduleContainer>
       <ScheduleItem
         title="ARRIVAL"
         date="THURSDAY, MAY 30th, 2024"
@@ -51,7 +52,7 @@ const Schedule = () => {
         date="SUNDAY, JUNE 2nd, 2024"
         details="Details coming soon"
       />
-    </div>
+    </ScheduleContainer>
   )
 }
 

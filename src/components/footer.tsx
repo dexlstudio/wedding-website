@@ -6,9 +6,9 @@ import {
 
 const Footer = () => {
   return (
-    <div>
+    <>
       <Bottom>D & E</Bottom>
-    </div>
+    </>
   )
 }
 

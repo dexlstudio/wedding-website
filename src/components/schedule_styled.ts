@@ -8,6 +8,9 @@ import {
 
 export const COLOR_GREEN_DIVIDER = `rgba(92, 111, 106, 0.8)`
 
+export const ScheduleContainer = styled.div`
+    margin-bottom: 200px;
+`
 export const ScheduleTitle = styled.p`
     font-family: Poiret One;
     font-size: 48px;
