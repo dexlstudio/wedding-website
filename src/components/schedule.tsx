@@ -35,7 +35,7 @@ const Schedule = () => {
       <ScheduleItem
         title="ARRIVAL"
         date="THURSDAY, MAY 30th, 2024"
-        details="Details coming soon"
+        details="Checking in. Details coming soon"
       />
       <ScheduleItem
         title="EXPLORE THE COAST"
@@ -50,7 +50,7 @@ const Schedule = () => {
       <ScheduleItem
         title="DEPARTURE"
         date="SUNDAY, JUNE 2nd, 2024"
-        details="Details coming soon"
+        details="Checking out. Details coming soon"
       />
     </ScheduleContainer>
   )
