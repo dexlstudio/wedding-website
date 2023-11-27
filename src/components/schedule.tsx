@@ -7,7 +7,7 @@ import {
   ScheduleDivider,
   ScheduleItemContainer,
   ScheduleContainer
-} from './schedule_styled'
+} from './styled'
 
 interface ScheduleItemProps {
   title: String;

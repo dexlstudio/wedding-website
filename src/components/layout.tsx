@@ -11,7 +11,7 @@ import {
   BackgroundImage,
   NavigationItem,
   SaveTheDate,
-  HotelRoomSnippet,
+  HotelSnippet,
   Date,
   AddressLabel,
   Address,
@@ -72,9 +72,9 @@ const Layout = () => {
           </Address>
 
           
-          <HotelRoomSnippet>
+          <HotelSnippet>
             Your hotel rooms have been paid for as part of our gift to you. If you wish to stay at a different hotel or would like to request a specific room type, please let us know.
-          </HotelRoomSnippet>
+          </HotelSnippet>
         </UpperContent>
         <Schedule/>
         <Footer/>

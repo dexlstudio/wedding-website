@@ -102,35 +102,40 @@ export const Main = styled.div`
 export const NavigationItem = styled.ul`
 `;
 
-export const HotelRoomSnippet = styled.p`
-    font-size: 16px;
-    letter-spacing: 2.8px;
-    line-height: 30px;
-    max-width: 300px;
-    margin-top: 52px;
+const Paragraph = 
+`font-size: 16px;
+font-family: Lato;
+letter-spacing: 2.8px;
+line-height: 30px;
 
-    @media ${device.tabletandbigger} {
-        font-size: 18px;
-        letter-spacing: 2.8px;        
-        line-height: 32px;
-        max-width: 466px;
-    }
-    @media ${device.laptopandbigger} {
-        font-size: 20px;
-        letter-spacing: 3px;
-        line-height: 36px;
-        max-width: 512px;
-        margin-top: 68px;
-    }
+@media ${device.tabletandbigger} {
+    font-size: 18px;
+    line-height: 32px;
     
+}
+@media ${device.laptopandbigger} {
+    font-size: 20px;
+    line-height: 36px;
+    
+}`
+
+export const HotelSnippet = styled.p`
+    ${Paragraph}
+    margin-top: 52px;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    
     margin-bottom: 200px;
-    
     font-weight: 400;
+    max-width: 300px;
     
+    @media ${device.tabletandbigger} {
+        max-width: 466px;
+    }
+    @media ${device.laptopandbigger} {
+        margin-top: 68px;
+        max-width: 512px;  
+    }
 `;
 
 export const SaveTheDate = styled.p `
@@ -174,6 +179,7 @@ export const Date = styled.h1`
     
 `;
 export const AddressLabel = styled.a`
+    font-family: Lato;
     color: ${COLOR_BLACK};
     display: block;
     font-weight: 700;
@@ -192,6 +198,7 @@ export const AddressLabel = styled.a`
     
 `;
 export const Address = styled.a`
+    font-family: Lato;
     display: block;
     color: ${COLOR_ORANGE};
     font-weight: 400;
@@ -211,4 +218,62 @@ export const Address = styled.a`
 export const UpperContent = styled.div`
     text-align: center;
     letter-spacing: 3px;
+`;
+
+export const NotFoundContainer = styled.div`
+    margin: 88px 12px 66px 66px;
+`;
+
+
+
+// Schedule Details 
+
+export const COLOR_GREEN_DIVIDER = `rgba(92, 111, 106, 0.8)`
+
+export const ScheduleContainer = styled.div`
+    margin-bottom: 200px;
+`
+export const ScheduleTitle = styled.p`
+    font-family: Poiret One;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 7.2px;
+    margin-bottom: 20px;
+`;
+
+export const ScheduleDate = styled.p`
+    color: ${COLOR_BLACK};
+    font-family: Lato;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 3.6px;
+    margin-bottom: 16px;
+`;
+
+export const ScheduleDetails = styled.p`
+    ${Paragraph}
+    color: ${COLOR_BLACK};
+    // font-family: Lato;
+    // font-size: 20px;
+    // font-style: normal;
+    // font-weight: 400;
+    // line-height: 36px; /* 180% */
+    // letter-spacing: 3px;
+`;
+
+export const ScheduleDivider = styled.hr`
+    width: 100%;
+    color: ${COLOR_GREEN_DIVIDER};
+    opacity: 35%;
+    border: none;
+    height: 1px;
+    background-color: ${COLOR_GREEN_DIVIDER};
+`;
+
+export const ScheduleItemContainer = styled.div`
+    margin: 88px 3%
 `;
