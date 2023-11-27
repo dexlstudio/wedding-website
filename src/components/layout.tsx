@@ -20,18 +20,20 @@ import {
 
 const Layout = () => {
   const [bgopacity, setBgOpacity] = React.useState(1);
-  window.addEventListener('scroll', (e) => {
-      // console.log("SDF:LKJDSF" + window.scrollY)
-      const x = window.scrollY;
-      const a = 541;
-      if (x < a) {
-        const t = x/a - 1
-        setBgOpacity(t*t)
-      } else {
-        setBgOpacity(0)
+  if (typeof window !== 'undefined') {
+    window.addEventListener('scroll', (e) => {
+        // console.log("SDF:LKJDSF" + window.scrollY)
+        const x = window.scrollY;
+        const a = 541;
+        if (x < a) {
+          const t = x/a - 1
+          setBgOpacity(t*t)
+        } else {
+          setBgOpacity(0)
+        }
       }
-    }
-  )
+    )
+  }
   return (
     
     <Main >
